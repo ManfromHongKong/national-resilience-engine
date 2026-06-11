@@ -10,10 +10,33 @@ st.set_page_config(page_title="Drake National Resilience Engine", layout="wide")
 
 st.markdown("""
     <style>
-    .main { background-color: #050505; color: #e0e0e0; }
-    .stApp { background-color: #050505; }
-    .card { background-color: #121212; padding: 20px; border-radius: 8px; border: 1px solid #333; margin-bottom: 10px; }
-    .header-text { color: #007bff; font-weight: bold; }
+    /* Main body background */
+    .main { background-color: #0e1117; }
+    
+    /* Card aesthetics */
+    .card { 
+        background-color: #1e1e1e; 
+        padding: 20px; 
+        border-radius: 10px; 
+        border-left: 5px solid #4a90e2; 
+    }
+    
+    /* Increased brightness for text */
+    .metric-title { 
+        color: #d1d1d1 !important; /* Lighter grey for better readability */
+        font-size: 0.95rem; 
+        font-weight: 500;
+    }
+    
+    .metric-value { 
+        color: #ffffff !important; /* Pure white */
+        font-size: 1.8rem; 
+        font-weight: bold; 
+    }
+    
+    /* Ensure general text is also readable */
+    div, p, label { color: #e0e0e0 !important; }
+    
     </style>
 """, unsafe_allow_html=True)
 
